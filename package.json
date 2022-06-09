@@ -2,6 +2,7 @@
   "name": "teachable-snake",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://losunny.github.io/TeachableSnake/",
   "dependencies": {
     "node-sass": "^6.0.1",
     "react": "^16.8.6",
