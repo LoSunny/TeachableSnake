@@ -34,7 +34,7 @@ export const useActions = (state, dispatch) => {
 			: null
 
 		switch(keyCode) {
-			case LEFT:
+			case 'LEFT':
 			case arrowLeft:
 				dispatch({
 					type: types.MOVE_SNAKE,
@@ -46,7 +46,7 @@ export const useActions = (state, dispatch) => {
 					}
 				})
 				return
-			case UP:
+			case 'UP':
 			case arrowUp:
 				dispatch({
 					type: types.MOVE_SNAKE,
@@ -58,7 +58,7 @@ export const useActions = (state, dispatch) => {
 					}
 				})
 				return
-			case RIGHT:
+			case 'RIGHT':
 			case arrowRight:
 				dispatch({
 					type: types.MOVE_SNAKE,
@@ -70,7 +70,7 @@ export const useActions = (state, dispatch) => {
 					}
 				})
 				return
-			case DOWN:
+			case 'DOWN':
 			case arrowDown:
 				dispatch({
 					type: types.MOVE_SNAKE,

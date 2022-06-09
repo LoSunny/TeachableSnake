@@ -10,21 +10,22 @@ import { isInFrame } from '../../utilities/snake'
 function GameBoard () {
 	const { actions } = useContext(StoreContext)
 
-	const tm = window.tm
 	const [userWebCam, setUserWebCam] = useState(null)
 	const [model, setModel] = useState(null)
 
 	async function loadModel() {
-		const loadedModel = await tm.mobilenet.load(staticStore.model.checkPoint)
+		// eslint-disable-next-line no-undef
+		const loadedModel = await tmImage.load(staticStore.model.url + 'model.json', staticStore.model.url + 'metadata.json')
 		setModel(loadedModel)
 	}
 
 	async function predictVideo(image) {
 		if (model) {
-			const prediction = await model.predict(image, 4)
+			let prediction = await model.predict(image, 4)
+			prediction = prediction.sort((a, b) => - (a.probability - b.probability))
 			const predictType = prediction[0].className
 
-			if (isInFrame) actions.updateSnakePosition({ predictType })
+			if (isInFrame) actions.updateSnakePosition({ predictType: predictType })
 
 			predictVideo(userWebCam)
 		}
