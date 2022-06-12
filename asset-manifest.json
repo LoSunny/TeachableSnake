@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/TeachableSnake/static/css/main.69975b73.css",
-    "main.js": "/TeachableSnake/static/js/main.40cd6bcc.js",
+    "main.js": "/TeachableSnake/static/js/main.b0ca5d28.js",
     "static/media/sprite.png": "/TeachableSnake/static/media/sprite.d33c7cfc08025a6b9624.png",
     "index.html": "/TeachableSnake/index.html",
     "main.69975b73.css.map": "/TeachableSnake/static/css/main.69975b73.css.map",
-    "main.40cd6bcc.js.map": "/TeachableSnake/static/js/main.40cd6bcc.js.map"
+    "main.b0ca5d28.js.map": "/TeachableSnake/static/js/main.b0ca5d28.js.map"
   },
   "entrypoints": [
     "static/css/main.69975b73.css",
-    "static/js/main.40cd6bcc.js"
+    "static/js/main.b0ca5d28.js"
   ]
 }
